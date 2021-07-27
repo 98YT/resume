@@ -545,6 +545,9 @@
           display: none;
         }
       }
+      h3 {
+        font-weight: bold;
+      }
     </style>
     <base target="_blank">
   </head>
@@ -632,7 +635,7 @@
               <div class="item">
                 <header class="item-hd">
                   <h3 class="item-name">广州易方信息股份科技有限公司</h3>
-                  <span class="item-time">2020.05 至今</span>
+                  <span class="item-time">2020.05 至 2021.04</span>
                   <a class="btn item-more" href="https://portal.polyv.net/index">工作</a>
                 </header>
                 <div class="item-bd">
@@ -862,7 +865,7 @@
       </div>
 
       <div class="content-bd">
-        <div class="content-left">
+        <!-- <div class="content-left">
           <section class="project">
             <header class="section-hd">
               <span class="section-title-l"></span>
@@ -870,34 +873,41 @@
               <span class="section-title-r"></span>
             </header>
             <div class="section-bd">
-              <!--项目:Vue-->
               <div class="item">
                 <header class="item-hd">
-                  <a class="btn item-more left0" href="https://hexo.io/">Vue、Nuxt</a>
+                  <a class="btn item-more left0" href="https://hexo.io/"
+                    >Vue、Nuxt</a
+                  >
                 </header>
                 <div class="item-bd">
                   <ul>
                     <li>
-                      翡翠严品app内嵌H5&nbsp;<a href="javascript:;">需在app里查看</a>&nbsp;
+                      翡翠严品app内嵌H5 <a href="javascript:;">需在app里查看</a
+                      > 
                     </li>
                     <li>
-                      翁源龙泰酒店微信公众号&nbsp;<a href="javascript:;">需在微信里查看</a>&nbsp;
+                      翁源龙泰酒店微信公众号 <a href="javascript:;"
+                        >需在微信里查看</a
+                      > 
                     </li>
                     <li>
-                      使用Nuxt.js快速开发官网&nbsp;<a href="http://www.goucui.vip/">购翠网</a>
+                      使用Nuxt.js快速开发官网 <a href="http://www.goucui.vip/"
+                        >购翠网</a
+                      >
                     </li>
                     <li>使用vue.js快速开发视频门户B端</li>
                     <li>使用Nuxt.js快速开发视频门户C端</li>
                     <li>使用vue.js+echats+websocket开发即时通讯webapp聊天室</li>
-                    <li>使用vue.js+vant+js&nbsp;Bridge开发中国银行webviewH5页面</li>
+                    <li>使用vue.js+vant+js Bridge开发中国银行webviewH5页面</li>
                   </ul>
                 </div>
               </div>
 
-              <!--项目:Nodejs、Hexo-->
               <div class="item">
                 <header class="item-hd">
-                  <a class="btn item-more left0" href="https://hexo.io/">Nodejs、Hexo</a>
+                  <a class="btn item-more left0" href="https://hexo.io/"
+                    >Nodejs、Hexo</a
+                  >
                 </header>
                 <div class="item-bd">
                   <ul>
@@ -910,10 +920,13 @@
                 </div>
               </div>
 
-              <!--项目:小程序-->
               <div class="item">
                 <header class="item-hd">
-                  <a class="btn item-more left0" href="https://uniapp.dcloud.io/">小程序</a>
+                  <a
+                    class="btn item-more left0"
+                    href="https://uniapp.dcloud.io/"
+                    >小程序</a
+                  >
                 </header>
                 <div class="item-bd">
                   <ul>
@@ -926,50 +939,101 @@
               </div>
             </div>
           </section>
-        </div>
-        <div class="content-right">
+        </div> -->
+
+        <div class="content-right" style="width: 100%">
           <section class="project">
             <header class="section-hd">
               <span class="section-title-l"></span>
-              <h2 class="section-title">项目难点</h2>
+              <h2 class="section-title">项目经历</h2>
               <span class="section-title-r"></span>
             </header>
+
             <div class="section-bd">
               <div class="item">
                 <header class="item-hd">
-                  <a class="btn item-more left0" href="https://hexo.io/">
-                    视频门户编辑端</a>
+                  2020/05 - 2021/04 广州易方信息股份科技有限公司 | WEB前端
                 </header>
                 <div class="item-bd">
+                  <h3>视频门户B端项目</h3>
                   <ul>
-                    <li>监听页面数据变化，离开时自动保存</li>
-                    <li>实现点播、直播随意拖拽排序</li>
+                    <li>使用Vue.js及Element Ui技术栈来完成单页面应用，前后端分离提高前后端开发效率；</li>
+                    <li>借助Vuex存储数据的状态，划分model数据使项目数据流更清晰；</li>
+                    <li>设计封装了图片上传组件以便在项目中多处使用提高项目耦合度</li>
+                    <li>使用watch监听表单的某一项改变离开时自动保存的问题</li>
+                    <li>使用vuedraggable解决视频点播、直播的任意拖拽</li>
+                    <li>使用了html2canvas解决了动态生成海报的问题，并且在生成的时候默认滚动到顶部，解决生成海报会空白的问题</li>
+                    <li>使用了路由懒加载、图片懒加载、iconfont、以及npm run build打包时自动上传到oss、cdn，解决了前端性能优化的问题</li>
+                  </ul>
+                </div>
+                <div class="item-bd">
+                  <h3>视频门户C端项目</h3>
+                  <ul>
+                    <li>使用了Nuxt.js技术栈解决了项目SEO优化的难点</li>
+                    <li>动态使用了import引入主题色解决了异步更新页面主题色的问题</li>
+                    <li>使用了CSS3的 vw vh 计量单位解决展会模板自适应全屏幕大小适配的问题</li>
+                    <li>结合业余使用到了多处CSS3动画来代替js做到页面动画的一个流畅性，并且适当了开启GPU加速</li>
+                    <li>使用了路由懒加载、图片懒加载、iconfont、以及npm run build打包时自动上传到oss、cdn，解决了前端性能优化的问题</li>
                   </ul>
                 </div>
               </div>
+            </div>
 
+            <div class="section-bd">
               <div class="item">
                 <header class="item-hd">
-                  <a class="btn item-more left0" href="https://hexo.io/">
-                    视频门户C端</a>
+                  2019/02 - 2020/05 广州购翠网科技有限公司 | WEB前端
                 </header>
                 <div class="item-bd">
+                  <h3>购翠网app端</h3>
                   <ul>
-                    <li>大屏展览CSS3动画，可视化开发</li>
-                    <li>实现响应式设计</li>
+                    <li>使用Vue.js及Vant ui技术栈来完成单页面应用，前后端分离提高前后端开发效率；</li>
+                    <li>设计封装使用了 HBuilder APP 设计使用 JS Bridge联调来解决H5和app的数据交互</li>
+                    <li>并且使用了Node.js express 中间件解决了接口加密方式不外泄的问题</li>
+                    <li>使用了路由懒加载、图片懒加载、iconfont、以及npm run build打包时自动上传到oss、cdn，解决了前端性能优化的问题</li>
+                  </ul>
+                </div>
+                <div class="item-bd">
+                  <h3>购翠网后台管理系统</h3>
+                  <ul>
+                    <li>使用Vue.js及Element Ui技术栈来完成单页面应用，前后端分离提高前后端开发效率；</li>
+                    <li>项目中使用mixin大量封装了一些全局入口方法</li>
+                    <li>利用全局指令解决了用户按钮级菜单权限的问题</li>
+                    <li>结合使用了vuex和sessionStroage来优化获取用户菜单并且存到本地</li>
+                    <li>使用了路由懒加载、图片懒加载、iconfont、以及npm run build打包时自动上传到oss、cdn，解决了前端性能优化的问题</li>
+                  </ul>
+                </div>
+                <div class="item-bd">
+                  <h3>web聊天室</h3>
+                  <ul>
+                    <li>使用Vue.js技术栈来完成单页面应用，前后端分离提高前后端开发效率；</li>
+                    <li>使用了阿里云的“MQTT 消息队列”作为聊天室socket</li>
+                    <li>项目中大量使用了wx-sdk来获取一些原生的体验包括（微信支付、地图、图片预览、微信分享、录音）</li>
+                    <li>项目中解决了聊天室自动断开自动重连，并且监听心跳包来实现重连</li>
+                    <li>结合业务使用了Echart 来完成用户实时对战PK答题呈现动态的折线图效果</li>
+                    <li>封装了图片、语音、视频、图片、文件、等等各种业务组件来达到业务分离和整合</li>
                   </ul>
                 </div>
               </div>
+            </div>
 
-              <div class="item">
+
+
+
+
+
+              <!-- <div class="item">
                 <header class="item-hd">
                   <a class="btn item-more left0" href="https://hexo.io/">
-                    购翠网app端</a>
+                    购翠网app端</a
+                  >
                 </header>
                 <div class="item-bd">
                   <ul>
                     <li>HBuilder APP 设计使用 JS Bridge联调</li>
-                    <li>设计封装使用nodejs/express/koa中间件解决服务端接口加密安全性的问题</li>
+                    <li>
+                      设计封装使用nodejs/express/koa中间件解决服务端接口加密安全性的问题
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -977,11 +1041,14 @@
               <div class="item">
                 <header class="item-hd">
                   <a class="btn item-more left0" href="https://hexo.io/">
-                    购翠网小程序</a>
+                    购翠网小程序</a
+                  >
                 </header>
                 <div class="item-bd">
                   <ul>
-                    <li>使用网易云信创建socket实例连接聊天室，监听错误实现重连</li>
+                    <li>
+                      使用网易云信创建socket实例连接聊天室，监听错误实现重连
+                    </li>
                     <li>微信支付</li>
                   </ul>
                 </div>
@@ -989,7 +1056,9 @@
 
               <div class="item">
                 <header class="item-hd">
-                  <a class="btn item-more left0" href="https://hexo.io/">龙泰微信公众号</a>
+                  <a class="btn item-more left0" href="https://hexo.io/"
+                    >龙泰微信公众号</a
+                  >
                 </header>
                 <div class="item-bd">
                   <ul>
@@ -1005,7 +1074,8 @@
               <div class="item">
                 <header class="item-hd">
                   <a class="btn item-more left0" href="https://hexo.io/">
-                    聊天室</a>
+                    聊天室</a
+                  >
                 </header>
                 <div class="item-bd">
                   <ul>
@@ -1015,8 +1085,8 @@
                     <li>使用v-chat配合websocket实现实时对战PK答题K线图</li>
                   </ul>
                 </div>
-              </div>
-            </div>
+              </div> -->
+
           </section>
         </div>
       </div>
